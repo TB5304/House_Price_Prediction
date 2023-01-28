@@ -74,4 +74,4 @@ lr = lm.LinearRegression()
 lr.fit(X, Y)
 price = lr.predict(user_df)
 print("Price of House is USD ", int(price[0]))
-
+#Changes
