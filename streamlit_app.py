@@ -9,7 +9,7 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 import numpy as np
-col1, col2= st.beta_columns(2)
+col1, col2= st.st.columns(2)
 with col1:    
     st.write("**Profile :** https://tb5304.github.io")
 with col2:   
