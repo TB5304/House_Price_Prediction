@@ -18,7 +18,7 @@ with col1:
 with col2:   
     st.write("**Blog :** https://tb5304.github.io/") 
 # Text/Title
-st.title("Logistic Regression - Mnist Dataset")        }
+st.title("House Price Prediction")        
 
 # Read the data
 import pandas as pd
