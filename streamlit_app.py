@@ -14,7 +14,7 @@ import streamlit as st
 
 from PIL import Image
 
-pickle_in = open("classifier.pkl","rb")
+pickle_in = open("HousePredictionFile","rb")
 classifier=pickle.load(pickle_in)
 def welcome():
     return "Welcome All"
