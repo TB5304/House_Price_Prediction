@@ -3,7 +3,8 @@ import numpy as np
 import pickle
 import streamlit as st
 
-loaded_model = pickle.load('HousePredictionFile', 'rb')
+pickle_in = open("HousePredictionFile","rb")
+loaded_model=pickle.load(pickle_in)
 
 def diabetes_prediction(xt):    
     prediction = loaded_model.predict(xt)    
