@@ -2,6 +2,5 @@ numpy==1.21.6
 pickleshare==0.7.5
 scikit-image==0.19.2
 scikit-learn==1.0.2
-scikit-learn-intelex==2021.6.0
 streamlit==1.17.0
 cloudpickle==2.0.0
