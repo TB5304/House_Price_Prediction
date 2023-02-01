@@ -5,6 +5,16 @@ import streamlit as st
 
 pickle_in = open("HousePredictionFile","rb")
 loaded_model=pickle.load(pickle_in)
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 def diabetes_prediction(xt):    
     prediction = loaded_model.predict(xt)    
@@ -22,11 +32,9 @@ def main():
     airco = (st.text_input("airco"))
     garagepl = (st.text_input("garagepl"))
     prefarea = (st.text_input("prefarea"))
-    #print(xt)
-    #print("____________________________________________________________________")
-    #print("Printing Details Of Collected Objects")
-    #for i in xt[0]:
-        #print(f"For {i} in Its Datatype= {type(i)}") 
+   
+
+
     diagnosis = ''
     xxt=[[2000,3,2,1,0,1,0,0,1,0]]
     if st.button(f'Predict Result '):
